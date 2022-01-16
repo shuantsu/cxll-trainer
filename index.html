@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+    <button id="butt">GENERATE</button>
+
+    <div id="sets" class="inline-block">
+        <div class="left">
+            <label><input name="set" type="radio" onchange="change_set(this.value)" checked value="o"/>O (Oriented)</label>
+            <label><input name="set" type="radio" onchange="change_set(this.value)" value="s"/>S (Sune)</label>
+            <label><input name="set" type="radio" onchange="change_set(this.value)" value="as"/>A/s (Anti-sune)</label>
+            <label><input name="set" type="radio" onchange="change_set(this.value)" value="t"/>T (Chameleon)</label>
+            <label><input name="set" type="radio" onchange="change_set(this.value)" value="u"/>U (Headlights)</label>
+            <label><input name="set" type="radio" onchange="change_set(this.value)" value="l"/>L (Bowtie)</label>
+            <label><input name="set" type="radio" onchange="change_set(this.value)" value="pi"/>Pi (Bruno)</label>
+            <label><input name="set" type="radio" onchange="change_set(this.value)" value="h"/>H (Double sune)</label>
+        </div>
+        <div class="right">
+            <a onclick="showOptions()" href="#options"><img src="https://img.icons8.com/small/32/000000/gear.png" id="options" style="vertical-align:middle;float:right"></a>
+        </div>
+    </div>
+
+    <div id="output"></div>
+
+    <div id="modal">
+        <div id="close">X</div>
+
+        <label><input id="random_orientation" type="checkbox" />Random Orientation</label>
+
+        <div id="ocll-options">
+        </div>
+
+    </div>
+
+    <div id="loader">
+    <img src="img/loader.gif">
+    <div><br>Please wait patiently...</div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg.js/3.0.13/svg.js"></script>
+    <script src="js/visualcube.js"></script>
+    <script src="js/cube.js"></script>
+    <script src="js/solve.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

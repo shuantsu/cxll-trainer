@@ -1,0 +1,158 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, .3);
+}
+
+.active {
+    background-color: rgb(0, 255, 179);
+}
+
+button {
+    margin: 5px;
+    padding: 15px;
+    font-size: 16pt;
+    border: 0;
+    border-radius: 4px;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.alg {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.alg:last-child {
+    margin-bottom: 60px;
+}
+
+.setup {
+    height: 100%;
+}
+
+#sets {
+    clear: both;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: white;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, .4);
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+}
+
+#sets .left {
+    overflow-x: auto;
+    overflow-y: hidden;
+    white-space: nowrap;
+    flex: 1;
+    padding: 10px;
+}
+
+#sets .right {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+#sets label {
+    padding: 10px;
+    display: inline-block;
+    transition: .5s all;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+[type="radio"] {
+    display: none;
+}
+
+button,
+#sets label:hover,
+.active-radio {
+    background: black;
+    color: rgb(0, 255, 179);
+}
+
+#modal {
+    background: black;
+    display: none;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+}
+
+#options {
+    margin: 0 12px;
+}
+
+#close {
+    color: white;
+    font-size: 20pt;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
+#ocll-options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.ocll {
+    transition: .5s all;
+}
+
+.ocll_wrapper {
+    transition: .5s all;
+    transform: scale(1);
+}
+
+#modal label {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+    display: block;
+}
+
+.fancy-hide {
+    transform: scale(0);
+}
+
+#loader {
+    background: rgba(255, 255, 255, .9);
+    top: 0;
+    left: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: none;
+}
